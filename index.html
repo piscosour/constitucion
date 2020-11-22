@@ -1,0 +1,42 @@
+---
+layout: pagina
+---
+<div class="index-header">
+	<h1>Constitución Política del Perú</h1>
+	<p>El Congreso Constituyente Democrático, invocando a Dios todopoderoso, obecediendo el mandato del pueblo peruano y recordando el sacrificio de todas las generaciones que nos han precedido en nuestra patria, ha resuelto dar la siguiente Constitución:</p>
+</div>
+
+{% for section in site.data.estructura %}
+<section class="titulo">
+{% if section.type == "extra" %}
+	{% for element in site.articulos %}
+		{% if element.titulo == section.titulo %}
+			<a href="{{ element.url }}"><h1>{{ section.title }}</h1></a>
+		{% endif %}
+	{% endfor %}
+{% else %}
+<h1>{{ section.title }}</h1>
+	{% if section.capitulos %}
+		{% for capitulo in section.capitulos %}
+			<div class="capitulo">
+				<h2>{{ capitulo.title }}</h2>
+				{% for element in site.articulos %}
+					{% if element.titulo == section.titulo %}
+						{% if element.capitulo == capitulo.capitulo %}
+						<p><a href="{{ element.url }}">Artículo {{ element.articulo }}</a></p>
+						{% endif %}
+					{% endif %}
+				{% endfor %}
+			</div>
+		{% endfor %}
+	{% else %}
+		{% for element in site.articulos %}
+			{% if element.titulo == section.titulo %}
+				<p><a href="{{ element.url }}">Artículo {{ element.articulo }}</a></p>
+			{% endif %}
+		{% endfor %}
+	{% endif %}
+{% endif %}
+</section>
+{% endfor %}
+

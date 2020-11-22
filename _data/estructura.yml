@@ -1,0 +1,77 @@
+- title: Título I. De la persona y de la sociedad
+  titulo: 1
+  capitulos:
+  - title: Capítulo I. Derechos fundamentales de la persona
+    capitulo: 1
+  - title: Capítulo II. De los derechos sociales y económicos
+    capitulo: 2
+  - title: Capítulo III. De los derechos políticos y de los deberes
+    capitulo: 3
+  - title: Capítulo IV. De la función pública
+    capitulo: 4
+- title: Título II. Del Estado y la nación
+  titulo: 2
+  capitulos:
+  - title: Capítulo I. Del Estado, la nación y el territorio
+    capitulo: 1
+  - title: Capítulo II. De los tratados
+    capitulo: 2
+- title: Título III. Del régimen económico
+  titulo: 3
+  capitulos:
+  - title: Capítulo I. Principios generales
+    capitulo: 1
+  - title: Capítulo II. Del ambiente y los recursos naturales
+    capitulo: 2
+  - title: Capítulo III. De la propiedad
+    capitulo: 3
+  - title: Capítulo IV. Del régimen tributario y presupuestal
+    capitulo: 4
+  - title: Capítulo V. De la moneda y la banca
+    capitulo: 5
+  - title: Capítulo VI. Del régimen agrario y de las comunidades campesinas y nativas
+    capitulo: 6
+- title: Título IV. De la estructura del Estado
+  titulo: 4
+  capitulos:
+  - title: Capítulo I. Poder legislativo
+    capitulo: 1
+  - title: Capítulo II. De la función legislativa
+    capitulo: 2
+  - title: Capítulo III. De la ormación y promulgación de las leyes
+    capitulo: 3
+  - title: Capítulo IV. Poder ejecutivo
+    capitulo: 4
+  - title: Capítulo V. Del Consejo de Ministros
+    capitulo: 5
+  - title: Capítulo VI. De las relaciones con el poder legislativo
+    capitulo: 6
+  - title: Capítulo VII. Régimen de excepción
+    capitulo: 7
+  - title: Capítulo VIII. Poder judicial
+    capitulo: 8
+  - title: Capítulo IV. Del Consejo Nacional de la Magistratura
+    capitulo: 9
+  - title: Capítulo X. Del Ministerio Público
+    capitulo: 10
+  - title: Capítulo XI. De la Defensoría del Pueblo
+    capitulo: 11
+  - title: Capítulo XII. De la seguridad y de la defensa nacional
+    capitulo: 12
+  - title: Capítulo XIII. Del sistema electoral
+    capitulo: 13
+  - title: Capítulo XIV. De la descentralización
+    capitulo: 14
+- title: Título V. De las garantías constitucionales
+  titulo: 5
+- title: Título VI. De la reforma de la Constitución
+  titulo: 6
+- title: Disposiciones finales y transitorias
+  titulo: 7
+  type: extra
+- title: Disposiciones transitorias especiales
+  titulo: 8
+  type: extra
+- title: Anexo. Declaración
+  titulo: 9
+  type: extra

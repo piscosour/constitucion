@@ -1,0 +1,54 @@
+---
+comments: true
+---
+{% include head.html %}
+
+<section class="hero" id="article-header">
+	<div class="hero-body">
+		<div class="container">
+			<h1><a href="/">Constitución Política del Perú</a></h1>
+			{% for section in site.data.estructura %}
+				{% if page.titulo == section.titulo %}
+					<h2>{{ section.title }}</h2>
+					{% for capitulo in section.capitulos %}
+						{% if page.capitulo == capitulo.capitulo %}
+							<h3>{{ capitulo.title }}</h3>
+						{% endif %}
+					{% endfor %}
+				{% endif %}
+			{% endfor %}
+			{% if page.articulo %}
+				<h4>Artículo {{ page.articulo }}.-</h4>
+			{% endif %}
+		</div>
+	</div>
+</section>
+
+<section id="article-main">
+	<div class="container">
+		{{ content }}
+	</div>
+</section>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = '{{ site.url }}{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = '{{ page.id }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://reconstitucion.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+{% include tail.html %}
