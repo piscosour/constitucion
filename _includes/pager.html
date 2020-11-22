@@ -1,0 +1,19 @@
+{% assign articulos = site.articulos %}
+{% for element in articulos %}
+	{% if element.articulo == page.articulo %}
+		{% unless forloop.first %}
+			{% assign prevurl = prev.url %}
+		{% endunless %}
+		{% unless forloop.last %}
+			{% assign next = articulos[forloop.index] %}
+			{% assign nexturl = next.url %}
+		{% endunless %}
+	{% endif %}
+	{% assign prev = element %}
+{% endfor %}
+
+<div class="has-text-centered container pager">
+	<hr />
+	<p>{% if prevurl %}<a href="{{ prevurl }}">Artículo anterior</a>{% endif %} | {% if nexturl %}<a href="{{ nexturl }}">Artículo siguiente</a>{% endif %}</p>
+	<hr />
+</div>

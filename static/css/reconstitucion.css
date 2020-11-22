@@ -64,8 +64,8 @@ p {
 }
 
 #article-main {
-  margin-top: 20px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 200px;
 }
 #article-main p {
   font-size: 2rem;
@@ -76,6 +76,10 @@ p {
 }
 #article-main li {
   margin-left: 2rem;
+}
+
+.pager {
+  margin-bottom: 100px;
 }
 
 .footer {
