@@ -1,11 +1,12 @@
 ---
 layout: pagina
 ---
-<div class="index-header">
+<div class="container index-header">
 	<h1>Constitución Política del Perú</h1>
 	<p>El Congreso Constituyente Democrático, invocando a Dios todopoderoso, obecediendo el mandato del pueblo peruano y recordando el sacrificio de todas las generaciones que nos han precedido en nuestra patria, ha resuelto dar la siguiente Constitución:</p>
 </div>
 
+<div class="container index-content">
 {% for section in site.data.estructura %}
 <section class="titulo">
 {% if section.type == "extra" %}
@@ -39,4 +40,10 @@ layout: pagina
 {% endif %}
 </section>
 {% endfor %}
+</div>
 
+<section class="footer">
+	<div class="container">
+		<p>ReConstitución es un proyecto del Laboratorio de Experimentación Constitucional de <a href="https://melmac.pe">Melmac</a>.<br /><a href="/meta">¿Por qué existe esto?</a></p>
+	</div>
+</section>
